@@ -69,6 +69,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="packages\NUnit.2.6.3\NUnit.2.6.3.nupkg" />
+    <None Include="packages\NUnit.2.6.3\NUnit.2.6.3.nuspec" />
+    <None Include="packages\repositories.config" />
+    <None Include="packages\Selenium.Support.2.37.0\Selenium.Support.2.37.0.nupkg" />
+    <None Include="packages\Selenium.Support.2.37.0\Selenium.Support.2.37.0.nuspec" />
+    <None Include="packages\Selenium.WebDriver.2.37.0\Selenium.WebDriver.2.37.0.nupkg" />
+    <None Include="packages\Selenium.WebDriver.2.37.0\Selenium.WebDriver.2.37.0.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+    <Content Include="packages\NUnit.2.6.3\lib\nunit.framework.xml" />
+    <Content Include="packages\NUnit.2.6.3\license.txt" />
+    <Content Include="packages\Selenium.Support.2.37.0\lib\net35\WebDriver.Support.dll" />
+    <Content Include="packages\Selenium.Support.2.37.0\lib\net35\WebDriver.Support.xml" />
+    <Content Include="packages\Selenium.Support.2.37.0\lib\net40\WebDriver.Support.dll" />
+    <Content Include="packages\Selenium.Support.2.37.0\lib\net40\WebDriver.Support.xml" />
+    <Content Include="packages\Selenium.WebDriver.2.37.0\lib\net35\WebDriver.dll" />
+    <Content Include="packages\Selenium.WebDriver.2.37.0\lib\net35\WebDriver.xml" />
+    <Content Include="packages\Selenium.WebDriver.2.37.0\lib\net40\WebDriver.dll" />
+    <Content Include="packages\Selenium.WebDriver.2.37.0\lib\net40\WebDriver.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
