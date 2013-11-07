@@ -13,15 +13,20 @@ namespace RedGate.Deploy.SmokeTests
 
         public SmokeTestBase()
         {
-            var envServer = Environment.GetEnvironmentVariable("SMOKETESTSERVER");
-            SmokeTestUrlBase = string.Format("http://localhost:8080", envServer ?? "rgd-smoketest");
+           SmokeTestUrlBase = string.Format("http://localhost:8080");
         }
 
         [TestFixtureSetUp]
         public void FixtureSetUp()
-        {
-            
+        {            
             Driver = new FirefoxDriver();
+           
+            /* 
+             * DesiredCapabilities caps = DesiredCapabilities.InternetExplorer();
+            caps.SetCapability("version", "9");
+            Driver = new RemoteWebDriver(new Uri("http://selenium-hub1.testnet.red-gate.com:4444/wd/hub"), caps);
+             
+             */
         }
 
         [TestFixtureTearDown]
