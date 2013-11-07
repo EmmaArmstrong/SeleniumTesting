@@ -46,7 +46,7 @@ namespace RedGate.Deploy.SmokeTests
         {
             NavigateWithAuthentication(SmokeTestUrlBase, url);
             Assert.False(IsErrorPage(), "Got an unexpected Exception on page {0}", url);
-            Assert.AreEqual(!isAdmin, IsNotAuthorized(), "Acces rights to page {0} are incorrect", url);
+            Assert.AreEqual(!isAdmin, IsNotAuthorized(), "Access rights to page {0} are incorrect", url);
             StringAssert.DoesNotContain(";", Driver.FindElement(By.XPath("/html/body")).Text);
         }
 
