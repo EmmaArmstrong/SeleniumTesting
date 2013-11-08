@@ -17,5 +17,6 @@ You will also need to enable Nuget package restore, which can be done by Selecti
 Deployment Manager - http://www.red-gate.com/delivery/deployment-manager/
 Starter edition is free for up to 5 projects and deployment targets
 To run the tests, you will need Deployment Manager installed on the same machine on the default port (or you will need to change  the port number in the code on SmokeTestBase.cs).  You will also need to create two users UmbracoUser with the password Umbraco and make that user an administrator.  Then a second account NonAdmin with the same password, used on SiteUser.cs and AllPagesTest.cs respectively.
+Slides: http://www.slideshare.net/RedgateSoftware/running-agile-testable-content-deployments-from-start-to-finish-slideshare
 
 
