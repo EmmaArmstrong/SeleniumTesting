@@ -18,6 +18,6 @@ namespace RedGate.Deploy.WebAppTests.Utilities
             return UserName;
         }
 
-        public static readonly SiteUser DefaultAdminUser = new SiteUser("UmbracoUser", "Umbraco");
+        public static readonly SiteUser DefaultAdminUser = new SiteUser("AdminUser", "Password");
     }
 }

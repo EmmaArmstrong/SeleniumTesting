@@ -6,7 +6,7 @@ using RedGate.Deploy.WebAppTests.Pages;
 
 namespace RedGate.Deploy.SmokeTests
 {
-    [TestFixture("UmbracoUser", true)]
+    [TestFixture("AdminUser", true)]
     [TestFixture("NonAdmin", false)]
     public class AllPagesTest : SmokeTestBase
     {
@@ -92,12 +92,12 @@ namespace RedGate.Deploy.SmokeTests
 
             if (LoginPage.AmOnPage(Driver))
             {
-                new LoginPage(Driver).Login(username, "Umbraco");
+                new LoginPage(Driver).Login(username, "Password");
                 Driver.Navigate().GoToUrl(fullUrl);
             }
             else if(!Is404() && !IsErrorPage() && Driver.FindElement(By.Id("user_name")).Text != username)
             {
-                LoginPage.Load(Driver, baseUrl).Login(username, "Umbraco");
+                LoginPage.Load(Driver, baseUrl).Login(username, "Password");
                 Driver.Navigate().GoToUrl(fullUrl);
             }
         }
